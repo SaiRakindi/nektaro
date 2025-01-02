@@ -9,13 +9,14 @@ module.exports = {
         primary: {
           100: "#068C0A",
           200: "#004B23",
+          300: "#C9E4CA",
         },
         grey: {
           100: "#7D7D7D",
           200: "#DCDDE0",
           300: "#282828",
         },
-        white: "#ffffff",
+        white: { primary: "#ffffff", "light-bg": "#FBFBFD" },
       },
     },
   },

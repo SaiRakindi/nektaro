@@ -31,7 +31,7 @@ const Button = ({
     >
       <Text
         className={`${
-          isButtonFilled ? "text-white" : "text-primary-200"
+          isButtonFilled ? "text-white-primary" : "text-primary-200"
         } text-center tracking-widest text-lg font-semibold  ${textClass}`}
       >
         {title}

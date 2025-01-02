@@ -11,7 +11,7 @@ import HeaderDescription from "@/components/HeaderDescription";
 
 const SignUp = () => {
   return (
-    <SafeAreaView className="bg-white h-full">
+    <SafeAreaView className="bg-white-primary h-full">
       <ScrollView contentContainerClassName="h-full">
         <View className="flex flex-col h-full justify-center items-center px-10 ">
           <HeaderTitle title="Let's Nourish Naturally" />
