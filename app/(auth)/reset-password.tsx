@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import { router } from "expo-router";
 import HeaderDescription from "@/components/HeaderDescription";
 import HeaderTitle from "@/components/HeaderTitle";
+import { StatusBar } from "expo-status-bar";
 
 const ResetPassword = () => {
   return (
@@ -17,15 +18,11 @@ const ResetPassword = () => {
 
           <View className="mt-9">
             <View className="flex flex-col gap-[26px]">
-              <InputField
-                value=""
-                placeholder="Registered email"
-                onChange={() => {}}
-              />
+              <InputField value="" placeholder="Password" onChange={() => {}} />
 
               <InputField
                 value=""
-                placeholder="Registered email"
+                placeholder="Confirm Password"
                 onChange={() => {}}
               />
             </View>
@@ -42,6 +39,7 @@ const ResetPassword = () => {
           </View>
         </View>
       </ScrollView>
+      <StatusBar backgroundColor="#ffffff" style="light" />
     </SafeAreaView>
   );
 };

@@ -2,6 +2,7 @@ import { View, ScrollView, Image } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import WelcomeScreen from "@/components/WelcomeScreen";
+import { StatusBar } from "expo-status-bar";
 
 const Welcome = () => {
   return (
@@ -13,6 +14,7 @@ const Welcome = () => {
           ctaButtonText="Start"
           ctaButtonUrl={`/welcome-rewards`}
         />
+        <StatusBar backgroundColor="#C9E4CA" />
       </ScrollView>
     </SafeAreaView>
   );

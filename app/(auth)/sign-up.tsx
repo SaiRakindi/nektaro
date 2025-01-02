@@ -59,7 +59,7 @@ const SignUp = () => {
           </Text>
         </View>
       </ScrollView>
-      <StatusBar backgroundColor="" style="light" />
+      <StatusBar backgroundColor="#ffffff" style="light" />
     </SafeAreaView>
   );
 };

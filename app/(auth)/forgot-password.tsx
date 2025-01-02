@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import { router } from "expo-router";
 import HeaderTitle from "@/components/HeaderTitle";
 import HeaderDescription from "@/components/HeaderDescription";
+import { StatusBar } from "expo-status-bar";
 
 const ForgotPassword = () => {
   return (
@@ -25,7 +26,11 @@ const ForgotPassword = () => {
             />
 
             <View className="flex flex-col gap-4 mt-7">
-              <Button title={"Reset Password"} buttonStyle="filled" />
+              <Button
+                title={"Reset Password"}
+                buttonStyle="filled"
+                handlePress={() => router.push("/reset-password")}
+              />
 
               <Button
                 title={"Cancel"}
@@ -36,6 +41,7 @@ const ForgotPassword = () => {
           </View>
         </View>
       </ScrollView>
+      <StatusBar backgroundColor="#ffffff" style="light" />
     </SafeAreaView>
   );
 };
