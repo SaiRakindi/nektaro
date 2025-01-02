@@ -1,9 +1,17 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const HeaderTitle = ({ title }: { title: string }) => {
+const HeaderTitle = ({
+  title,
+  textAlign = "center",
+}: {
+  title: string;
+  textAlign?: string;
+}) => {
   return (
-    <Text className="font-semibold text-center color-primary-200 text-3xl tracking-normal">
+    <Text
+      className={`font-semibold text-${textAlign} color-primary-200 text-3xl tracking-normal`}
+    >
       {title}
     </Text>
   );
