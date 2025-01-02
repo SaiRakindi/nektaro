@@ -16,12 +16,12 @@ const InputField = ({
 }: ITextInput) => {
   return (
     <View
-      className={`border border-nekgray-200 border-solid rounded-md py-3 px-6 w-full`}
+      className={`border border-gray-200 border-solid rounded-md py-3 px-6 w-full`}
     >
       <TextInput
         value={value}
         placeholder={placeholder}
-        className={`grey-100 text-lg font-normal text-left ${textFieldClass}`}
+        className={`color-grey-100 text-lg font-normal text-left ${textFieldClass}`}
       />
     </View>
   );

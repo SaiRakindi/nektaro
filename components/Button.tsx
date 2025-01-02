@@ -3,6 +3,7 @@ import React from "react";
 
 interface IButtonProps {
   title: string;
+  buttonStyle?: "outline" | "filled";
   handlePress?: () => void;
   buttonClass?: string;
   textClass?: string;
@@ -11,21 +12,27 @@ interface IButtonProps {
 
 const Button = ({
   title,
+  buttonStyle = "filled",
   handlePress,
   buttonClass,
   textClass,
   isLoading,
 }: IButtonProps) => {
+  const isButtonFilled = buttonStyle === "filled";
   return (
     <TouchableOpacity
       onPress={handlePress}
-      className={`w-full bg-primary-100 p-3 text-center rounded-md ${buttonClass} ${
-        isLoading ? "opacity-50" : ""
-      }`}
+      className={`w-full p-3 text-center rounded-md ${
+        isButtonFilled
+          ? "bg-primary-100"
+          : "bg-transparent border border-1 border-primary-200"
+      } ${buttonClass} ${isLoading ? "opacity-50" : ""}`}
       disabled={isLoading}
     >
       <Text
-        className={`text-white text-center tracking-widest text-lg font-semibold  ${textClass}`}
+        className={`${
+          isButtonFilled ? "text-white" : "text-primary-200"
+        } text-center tracking-widest text-lg font-semibold  ${textClass}`}
       >
         {title}
       </Text>

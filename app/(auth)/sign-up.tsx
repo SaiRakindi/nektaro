@@ -6,18 +6,16 @@ import Button from "@/components/Button";
 import { StatusBar } from "expo-status-bar";
 import InputField from "@/components/InputField";
 import { Link } from "expo-router";
+import HeaderTitle from "@/components/HeaderTitle";
+import HeaderDescription from "@/components/HeaderDescription";
 
 const SignUp = () => {
   return (
     <SafeAreaView className="bg-white h-full">
       <ScrollView contentContainerClassName="h-full">
         <View className="flex flex-col h-full justify-center items-center px-10 ">
-          <Text className="font-semibold text-center color-primary-100 text-3xl tracking-normal">
-            Let's Nourish Naturally
-          </Text>
-          <Text className="text-lg font-normal color-primary-200 mt-5 tracking-normal text-center">
-            Join the movement: a healthier you starts with a simple signup.
-          </Text>
+          <HeaderTitle title="Let's Nourish Naturally" />
+          <HeaderDescription />
 
           <View className="flex flex-col gap-5 mt-[34px] mb-[20px]">
             <InputField
@@ -40,7 +38,8 @@ const SignUp = () => {
 
           <Text className="text-sm font-normal text-center">
             By <Text className="font-bold">Registering.</Text> you have agreed
-            to these <Text className="font-bold">Terms and conditions</Text>
+            to these {"\n"}
+            <Text className="font-bold">Terms and conditions</Text>
           </Text>
           <Button
             title="Signup"
