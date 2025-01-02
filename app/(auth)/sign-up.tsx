@@ -53,6 +53,10 @@ const SignUp = () => {
               Login
             </Link>
           </Text>
+
+          <Text className="text-lg font-normal tracking-normal text-center color-grey-300 mt-[22px] ">
+            <Link href="/forgot-password"> Forgot Password?</Link>
+          </Text>
         </View>
       </ScrollView>
       <StatusBar backgroundColor="" style="light" />

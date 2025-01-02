@@ -8,7 +8,7 @@ const Welcome = () => {
     <SafeAreaView>
       <ScrollView className="h-full">
         <WelcomeScreen
-          welcomeTitle="Earn Rewards"
+          welcomeTitle="Welcome"
           welcomeDescription="Experience the fresh taste of nature. Dive into our world of healthy, natural juices, smoothies, and more!"
           ctaButtonText="Start"
           ctaButtonUrl={`/welcome-rewards`}
