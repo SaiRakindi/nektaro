@@ -24,7 +24,11 @@ const WelcomeCard = ({
     <View className="flex flex-1  bottom-0 bg-primary-300 h-full">
       <View className="bg-white-primary px-[33px] pt-[50px] pb-[115px]  bottom-0">
         <HeaderTitle title={welcomeTitle} textAlign="left" />
-        <HeaderDescription description={welcomeDescription} textAlign="left" />
+        <HeaderDescription
+          description={welcomeDescription}
+          textAlign="left"
+          textColor="text-grey-300"
+        />
         <Button
           title={ctaButtonText}
           buttonClass="mt-9"
@@ -35,6 +39,7 @@ const WelcomeCard = ({
             buttonStyle="outline"
             title="Back"
             handlePress={() => router.back()}
+            buttonClass="mt-2.5"
           />
         )}
       </View>

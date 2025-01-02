@@ -6,7 +6,7 @@ import WelcomeScreen from "@/components/WelcomeScreen";
 const WelcomeRewards = () => {
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView className="h-full">
         <WelcomeScreen
           welcomeTitle={"Earn Rewards"}
           welcomeDescription="Join our loyalty program to collect points with every purchase and unlock exclusive benefits."

@@ -16,7 +16,7 @@ const InputField = ({
 }: ITextInput) => {
   return (
     <View
-      className={`border border-gray-200 border-solid rounded-md py-3 px-6 w-full`}
+      className={`border border-grey-200 border-solid rounded-md py-3 px-6 w-full`}
     >
       <TextInput
         value={value}
