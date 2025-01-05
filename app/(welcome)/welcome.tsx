@@ -15,6 +15,7 @@ const Welcome = () => {
           ctaButtonText="Start"
           ctaButtonUrl={`/welcome-rewards`}
         />
+        <Link href="/login">Login</Link>
         <StatusBar backgroundColor="#C9E4CA" />
       </ScrollView>
     </SafeAreaView>

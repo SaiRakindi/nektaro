@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, Dimensions } from "react-native";
 import React from "react";
 
 interface ITextInput {
@@ -16,7 +16,7 @@ const InputField = ({
 }: ITextInput) => {
   return (
     <View
-      className={`border border-grey-200 border-solid rounded-md py-3 px-6 w-full`}
+      className={`border border-grey-200 px-[23px] border-solid rounded-md h-[49px] w-full min-w-[312px] `}
     >
       <TextInput
         value={value}

@@ -16,7 +16,11 @@ module.exports = {
           200: "#DCDDE0",
           300: "#282828",
         },
-        white: { primary: "#ffffff", "light-bg": "#FBFBFD" },
+        white: {
+          primary: "#ffffff",
+          "light-bg": "#FBFBFD",
+          "off-white": "#f9f9f9",
+        },
       },
     },
   },
